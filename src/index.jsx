@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <h2>Frontend developer & UI lover</h2>
           <h3>This website is under construction</h3>
           <p>
-            You can check my projects on Github and follow me on LinkedIn :D
+            You can check my projects on Github and follow me on LinkedIn
           </p>
           <p className="links">
             <a href="https://github.com/PaulineLesueur">Check my projects</a> - <a href="https://www.linkedin.com/in/pauline-lesueur/">Follow the witch</a>
