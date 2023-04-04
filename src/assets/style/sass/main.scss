@@ -1,0 +1,116 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width:100vw;
+    height: 100vh;
+    background: $primaryColor;
+    font-family: $mainFont;
+    text-align: center;
+    color: $mainColor;
+}
+
+body::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.07;
+    background-image: $logo;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    font-family: $secondaryFont;
+    color: $mainColor;
+    transition: .2s;
+
+    &:hover {
+        color: $secondaryColor;
+        transition: .2s;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h1 {
+    z-index: 2;
+    position: relative;
+    font-family: $decorativeFont;
+    font-size: 96px;
+    letter-spacing: -2px;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: -43px;
+    font-family: $secondaryFont;
+    font-size: 30px;
+    color: $secondaryColor;
+}
+
+h3 {
+    margin: 90px 0 40px 0;
+    font-family: $primaryFont;
+    font-size: 40px;
+}
+
+p {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 300;
+
+    &.links {
+        font-style: normal;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        margin-top: -24px;
+        font-size: 20px;
+    }
+
+    h3 {
+        margin: 50px 0 20px 0;
+        font-size: 24px;
+    }
+
+    p {
+        width: 80%;
+        font-size: 16px;
+    }
+}
